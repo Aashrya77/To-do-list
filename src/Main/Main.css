@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+ width: 40rem;
+ min-height: 30rem;
+ overflow-y: scroll;
+ display: block;
+ margin: auto;   
+ border: 5px solid grey;
+ margin-top: 3rem;
+ font-family: 'Poppins', sans-serif;
+ position: relative;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+hr{
+    margin: 0;
+}
+
+.line{
+    border: 2px solid grey;
+    min-height: 58.8vh;
+    position: absolute;
+    left: 50%;
+}
+
+
+.top{
+    padding: 15px;
+}
+
+.top>input{
+    width: 15rem;
+    padding: 6px 10px;
+    border-radius: 50px;
+    outline: none;
+}
+
+.top>input:focus{
+    background-color: whitesmoke;
+}
+
+.top>button{
+    padding: 5px 10px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    border: none;
+    margin: 0 6px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.left, .right{
+    flex: 50%;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.left{
+    border-right: 3px solid grey;
+    max-height: 50rem;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+}
+
+.list>li{
+    margin: 4px 0px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid grey;
+}
+
+.content{
+    margin-left: 8px;
+}
+
+.check{
+    width: 15px;
+    height: 15px;
+}
+
+.left h3{
+    font-size: large;
+}
+
+.right{
+    position: relative;
+}
+
+
+.delete-btn{
+    position: absolute;
+    right: 5px;
+    font-size: 25px;
+    color: red;
+}
+
+.clear>button{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    padding: 6px 12px;
+    border: none;
+    background-color:  #FF0000;
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.credit{
+    margin-top: 90px;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background-color: grey;
+}
+
+@media screen and (max-width: 767px){
+    .container{
+        width: 20rem;
+    }
+
+    .clear>button{
+        font-size: 12px;
+        top: 10px;
+        padding: 6px 8px;
+        left: 3px;
+    }
+
+    .top>button{
+        margin-top: 8px;
+    }
+    .list{
+        padding: 0px;
+    }
+    .list>li{
+        align-items: unset;
+        text-align: start;
+        margin: 0;
+    }
+}
+
